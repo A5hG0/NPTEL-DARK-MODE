@@ -73,13 +73,6 @@ Want to change the colors? Edit `dark-mode.css` and modify these variables:
 - `popup.js` - Popup functionality
 - `icon16.png`, `icon48.png`, `icon128.png` - Extension icons
 
-## Future Improvements
-
-- [ ] Add keyboard shortcut (Ctrl+Shift+D)
-- [ ] Custom color themes
-- [ ] Auto-enable based on time of day
-- [ ] Support for more educational sites
-
 ## Made With ❤️
 
 Built for NPTEL learners who love studying at night!
