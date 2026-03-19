@@ -1,0 +1,399 @@
+/* Dark Mode Styles for NPTEL and SWAYAM */
+
+/* Root variables for easy customization */
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #444;
+  --link-color: #6db3f2;
+  --link-hover: #8dc5f5;
+  --accent-color: #4a9eff;
+}
+
+/* Apply dark mode when enabled - target both html and body */
+html.dark-mode-enabled,
+body.dark-mode-enabled {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode-enabled *,
+body.dark-mode-enabled * {
+  background-color: inherit;
+  color: inherit;
+  border-color: var(--border-color) !important;
+}
+
+/* Main containers */
+html.dark-mode-enabled div,
+html.dark-mode-enabled section,
+html.dark-mode-enabled article,
+html.dark-mode-enabled aside,
+html.dark-mode-enabled nav,
+html.dark-mode-enabled header,
+html.dark-mode-enabled footer,
+html.dark-mode-enabled main,
+body.dark-mode-enabled div,
+body.dark-mode-enabled section,
+body.dark-mode-enabled article,
+body.dark-mode-enabled aside,
+body.dark-mode-enabled nav,
+body.dark-mode-enabled header,
+body.dark-mode-enabled footer,
+body.dark-mode-enabled main {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Cards and panels */
+html.dark-mode-enabled .card,
+html.dark-mode-enabled .panel,
+html.dark-mode-enabled .box,
+html.dark-mode-enabled .container,
+body.dark-mode-enabled .card,
+body.dark-mode-enabled .panel,
+body.dark-mode-enabled .box,
+body.dark-mode-enabled .container {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Inputs and forms */
+html.dark-mode-enabled input,
+html.dark-mode-enabled textarea,
+html.dark-mode-enabled select,
+body.dark-mode-enabled input,
+body.dark-mode-enabled textarea,
+body.dark-mode-enabled select {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode-enabled input::placeholder,
+html.dark-mode-enabled textarea::placeholder,
+body.dark-mode-enabled input::placeholder,
+body.dark-mode-enabled textarea::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+/* Buttons */
+html.dark-mode-enabled button,
+html.dark-mode-enabled .btn,
+body.dark-mode-enabled button,
+body.dark-mode-enabled .btn {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode-enabled button:hover,
+html.dark-mode-enabled .btn:hover,
+body.dark-mode-enabled button:hover,
+body.dark-mode-enabled .btn:hover {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+/* Links */
+html.dark-mode-enabled a,
+body.dark-mode-enabled a {
+  color: var(--link-color) !important;
+}
+
+html.dark-mode-enabled a:hover,
+body.dark-mode-enabled a:hover {
+  color: var(--link-hover) !important;
+}
+
+/* Tables */
+html.dark-mode-enabled table,
+body.dark-mode-enabled table {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode-enabled th,
+html.dark-mode-enabled td,
+body.dark-mode-enabled th,
+body.dark-mode-enabled td {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode-enabled tr:nth-child(even),
+body.dark-mode-enabled tr:nth-child(even) {
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* Modals and popups */
+html.dark-mode-enabled .modal,
+html.dark-mode-enabled .popup,
+html.dark-mode-enabled .dialog,
+body.dark-mode-enabled .modal,
+body.dark-mode-enabled .popup,
+body.dark-mode-enabled .dialog {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Navbar */
+html.dark-mode-enabled .navbar,
+html.dark-mode-enabled .nav,
+html.dark-mode-enabled .menu,
+body.dark-mode-enabled .navbar,
+body.dark-mode-enabled .nav,
+body.dark-mode-enabled .menu {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Sidebar */
+html.dark-mode-enabled .sidebar,
+html.dark-mode-enabled aside,
+body.dark-mode-enabled .sidebar,
+body.dark-mode-enabled aside {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Video player - keep controls visible */
+html.dark-mode-enabled video,
+body.dark-mode-enabled video {
+  background-color: #000 !important;
+}
+
+/* Code blocks */
+html.dark-mode-enabled pre,
+html.dark-mode-enabled code,
+body.dark-mode-enabled pre,
+body.dark-mode-enabled code {
+  background-color: var(--bg-tertiary) !important;
+  color: #f8f8f2 !important;
+}
+
+/* Alerts and notifications */
+html.dark-mode-enabled .alert,
+html.dark-mode-enabled .notification,
+body.dark-mode-enabled .alert,
+body.dark-mode-enabled .notification {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Headings */
+html.dark-mode-enabled h1,
+html.dark-mode-enabled h2,
+html.dark-mode-enabled h3,
+html.dark-mode-enabled h4,
+html.dark-mode-enabled h5,
+html.dark-mode-enabled h6,
+body.dark-mode-enabled h1,
+body.dark-mode-enabled h2,
+body.dark-mode-enabled h3,
+body.dark-mode-enabled h4,
+body.dark-mode-enabled h5,
+body.dark-mode-enabled h6 {
+  color: var(--text-primary) !important;
+}
+
+/* Lists */
+html.dark-mode-enabled ul,
+html.dark-mode-enabled ol,
+html.dark-mode-enabled li,
+body.dark-mode-enabled ul,
+body.dark-mode-enabled ol,
+body.dark-mode-enabled li {
+  color: var(--text-primary) !important;
+}
+
+/* Preserve images but invert overly bright ones */
+html.dark-mode-enabled img,
+body.dark-mode-enabled img {
+  opacity: 0.9;
+}
+
+/* Don't invert icons and logos */
+html.dark-mode-enabled img[src*="logo"],
+html.dark-mode-enabled img[src*="icon"],
+body.dark-mode-enabled img[src*="logo"],
+body.dark-mode-enabled img[src*="icon"] {
+  opacity: 1;
+  filter: brightness(0.9);
+}
+
+/* Scrollbar styling */
+html.dark-mode-enabled ::-webkit-scrollbar,
+body.dark-mode-enabled ::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bg-primary);
+}
+
+html.dark-mode-enabled ::-webkit-scrollbar-thumb,
+body.dark-mode-enabled ::-webkit-scrollbar-thumb {
+  background-color: var(--bg-tertiary);
+  border-radius: 6px;
+}
+
+html.dark-mode-enabled ::-webkit-scrollbar-thumb:hover,
+body.dark-mode-enabled ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--border-color);
+}
+
+/* Specific fixes for common white backgrounds */
+html.dark-mode-enabled [style*="background-color: white"],
+html.dark-mode-enabled [style*="background-color: #fff"],
+html.dark-mode-enabled [style*="background-color: #ffffff"],
+html.dark-mode-enabled [style*="background: white"],
+html.dark-mode-enabled [style*="background: #fff"],
+body.dark-mode-enabled [style*="background-color: white"],
+body.dark-mode-enabled [style*="background-color: #fff"],
+body.dark-mode-enabled [style*="background-color: #ffffff"],
+body.dark-mode-enabled [style*="background: white"],
+body.dark-mode-enabled [style*="background: #fff"] {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Specific fixes for common black text */
+html.dark-mode-enabled [style*="color: black"],
+html.dark-mode-enabled [style*="color: #000"],
+html.dark-mode-enabled [style*="color: #000000"],
+body.dark-mode-enabled [style*="color: black"],
+body.dark-mode-enabled [style*="color: #000"],
+body.dark-mode-enabled [style*="color: #000000"] {
+  color: var(--text-primary) !important;
+}
+
+/* ===== SWAYAM-SPECIFIC FIXES ===== */
+
+/* Course card containers */
+html.dark-mode-enabled .course-card,
+html.dark-mode-enabled .card-course,
+html.dark-mode-enabled [class*="course"],
+html.dark-mode-enabled [class*="Card"],
+body.dark-mode-enabled .course-card,
+body.dark-mode-enabled .card-course,
+body.dark-mode-enabled [class*="course"],
+body.dark-mode-enabled [class*="Card"] {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Course card images - reduce brightness */
+html.dark-mode-enabled .course-card img,
+html.dark-mode-enabled .card-course img,
+html.dark-mode-enabled [class*="course"] img,
+html.dark-mode-enabled [class*="Card"] img,
+body.dark-mode-enabled .course-card img,
+body.dark-mode-enabled .card-course img,
+body.dark-mode-enabled [class*="course"] img,
+body.dark-mode-enabled [class*="Card"] img {
+  filter: brightness(0.7) contrast(1.1) !important;
+  opacity: 0.85 !important;
+}
+
+/* Course thumbnails and featured images */
+html.dark-mode-enabled img[src*="course"],
+html.dark-mode-enabled img[src*="thumbnail"],
+html.dark-mode-enabled img[src*="banner"],
+body.dark-mode-enabled img[src*="course"],
+body.dark-mode-enabled img[src*="thumbnail"],
+body.dark-mode-enabled img[src*="banner"] {
+  filter: brightness(0.7) contrast(1.1) !important;
+  opacity: 0.85 !important;
+}
+
+/* White/light backgrounds in cards */
+html.dark-mode-enabled .bg-white,
+html.dark-mode-enabled .bg-light,
+html.dark-mode-enabled [class*="bg-white"],
+html.dark-mode-enabled [class*="bg-light"],
+body.dark-mode-enabled .bg-white,
+body.dark-mode-enabled .bg-light,
+body.dark-mode-enabled [class*="bg-white"],
+body.dark-mode-enabled [class*="bg-light"] {
+  background-color: var(--bg-secondary) !important;
+}
+
+/* Card text elements */
+html.dark-mode-enabled .card-title,
+html.dark-mode-enabled .card-text,
+html.dark-mode-enabled .card-body,
+html.dark-mode-enabled .card-footer,
+body.dark-mode-enabled .card-title,
+body.dark-mode-enabled .card-text,
+body.dark-mode-enabled .card-body,
+body.dark-mode-enabled .card-footer {
+  color: var(--text-primary) !important;
+  background-color: transparent !important;
+}
+
+/* Badge and labels */
+html.dark-mode-enabled .badge,
+html.dark-mode-enabled .label,
+html.dark-mode-enabled .tag,
+body.dark-mode-enabled .badge,
+body.dark-mode-enabled .label,
+body.dark-mode-enabled .tag {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Footer elements */
+html.dark-mode-enabled footer,
+html.dark-mode-enabled footer *,
+body.dark-mode-enabled footer,
+body.dark-mode-enabled footer * {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* SWAYAM logo and social icons - keep original colors */
+html.dark-mode-enabled footer img,
+html.dark-mode-enabled [class*="social"] img,
+html.dark-mode-enabled img[alt*="logo"],
+html.dark-mode-enabled img[alt*="Logo"],
+body.dark-mode-enabled footer img,
+body.dark-mode-enabled [class*="social"] img,
+body.dark-mode-enabled img[alt*="logo"],
+body.dark-mode-enabled img[alt*="Logo"] {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Tab navigation */
+html.dark-mode-enabled .nav-tabs,
+html.dark-mode-enabled .nav-pills,
+html.dark-mode-enabled [role="tablist"],
+body.dark-mode-enabled .nav-tabs,
+body.dark-mode-enabled .nav-pills,
+body.dark-mode-enabled [role="tablist"] {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode-enabled .nav-tabs .nav-link,
+html.dark-mode-enabled .nav-pills .nav-link,
+body.dark-mode-enabled .nav-tabs .nav-link,
+body.dark-mode-enabled .nav-pills .nav-link {
+  color: var(--text-secondary) !important;
+  background-color: transparent !important;
+}
+
+html.dark-mode-enabled .nav-tabs .nav-link.active,
+html.dark-mode-enabled .nav-pills .nav-link.active,
+body.dark-mode-enabled .nav-tabs .nav-link.active,
+body.dark-mode-enabled .nav-pills .nav-link.active {
+  color: var(--accent-color) !important;
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* My Edits */
+body.dark-mode-enabled a.gcb-nav-course-title {
+  background-color: #000;
+}

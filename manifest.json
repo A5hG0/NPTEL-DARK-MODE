@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "NPTEL/SWAYAM Dark Mode",
+  "version": "1.0",
+  "description": "Dark mode for NPTEL and SWAYAM course websites",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://onlinecourses.nptel.ac.in/*",
+    "https://swayam.gov.in/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://onlinecourses.nptel.ac.in/*",
+        "https://swayam.gov.in/*"
+      ],
+      "css": ["dark-mode.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
